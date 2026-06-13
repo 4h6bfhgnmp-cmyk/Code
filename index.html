@@ -1,9 +1,31 @@
-<!DOCTYPE html>
-<html>
-<body>
+img {
+    max-height: 800px;
+    width: auto;
+    height: auto;
+}
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+.poster-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: repeating-conic-gradient(
+        from 3deg at 25% 25%,
+        yellowgreen 0deg 15deg,
+        paleturquoise 10deg 30deg);
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
 
-</body>
-</html>
+.poster-container .image-container img {
+    max-height: 400px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.poster-container .image-container p {
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 3px;
+    line-height: 1.5;
+}
